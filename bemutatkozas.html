@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <meta charset="UTF-8">
+<title>Bemutatkozás</title>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color:white;
+  text-align:center;
+  width: 86,2%;
+  margin:0 auto;
+}
+h2, p {
+  margin: 10px;
+}
+/* navigacios baaaar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-style: solid;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(5, 121, 5);
+}
+/*a sidenavben lévö linknek a formázása*/
+.sidenav {
+  position:fixed;
+  top:60px;
+  width:15%;
+  margin-left:2%;
+}
+.sidenav a{ 
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 12px;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #2bbbb9cb 0%, #109528 100%);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.sidenav p{
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(244, 240, 240);
+    display: flex;
+    justify-content:center;
+    border-radius: 10px;
+    margin:0px;
+    background-color: rgb(30, 30, 198);
+}
+/*Ha rá mutat a linkre akkor megváltozik a link szine*/
+.sidenav a:hover{
+    color: rgb(199, 196, 202);;
+}
+
+/*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
+.main{
+    margin-left: 20%;
+    font-size: 22px;
+    font-family:'Times New Roman';
+    margin-right:10px;
+    margin-top: 2%;
+    border-style:solid;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    margin-bottom:60px;
+
+}
+/*mainben levo szoveg*/
+.main p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* legordulo  */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  border-style:solid;
+  color:white;
+  border-right:none;
+  border-top:none;
+  border-bottom:none;
+  width:120px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  margin-left:20px
+}
+/* legordulo cuccos */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/*ha ramutatsz a legordulore*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.contact:hover {
+background-color: rgb(5, 121, 5);
+}
+.contact:link{
+  color:white;
+}
+.b {
+  margin-left:50px;
+  margin-right:50px;
+  text-align:justify;
+  font-size: 20px;
+}
+li{
+  margin-bottom:10px;
+}
+/*main sectionok*/
+header{
+  margin:1%;
+  font-weight: bolder;
+   font-family:'Times New Roman';
+}
+/*munkaim oldal*/
+.munkamain{
+  display: flex;           /* Egymás mellé teszi a képet és a szöveget */
+  align-items: center;    /* Függőlegesen középre igazítja őket */
+  gap: 20px;              /* Távolság a kép és a szöveg között */
+  margin:2%;
+  font-size: 20px;
+    font-family:'Times New Roman';
+    border-style:solid;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+}</style>
+</head>
+<body style="background-color:gray;">
+<div id="section1" class="navbar">
+  <a href="Munkameveim.html">Éveim</a>
+  <a href="szakmaitap.html">Tapasztalat</a>
+  <a href="tdk.html">TDK</a>
+
+  <div class="dropdown", style="background-color: rgb(5, 121, 5);">
+    <button class="dropbtn",>Rólam 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bemutatkozas.html", style="background-color: rgb(5, 121, 5)">Bemutatkozás</a>
+    </div>
+  </div> 
+</div>
+<div class="sidenav">
+        <p>Könyvjelző</p>
+        <a href="#section1">Vissza</a>
+        <a href="#section2">Eredményeim</a>
+        <a href="#section3">Köszönet</a>
+        <a href="#section4">Összegzés</a>
+        <br>
+        <img src="sajatkep.jpg"alt="Kérem,várjon" style="width:100%">
+    </div>
+    <div class="main">
+        <header style="text-align: center;">Bemutatkozás</header>
+        <p>A nevem Rácsik Bálint és az Ipari Informatikai Technikus szakot tanulom a VVSZC Gépipari és Informatikai Technikumban, bár az elején még nem is tudtam, mire vállalkozom, hiszen sokkal komplikáltabb a terület, mint először sejtené az ember.
+<br>Az első két évben mindenki nagyjából átfogóan mindent tanult, ezért sem sejthettem végül mivel is fogok foglalkozni.
+<br>Azonban ez az évek során elég szépen kialakult, egyrészt az iskolában másrészt karnyújtásnyira itt, a TDK kapui között, ipari környezetben is.
+Ahogyan egyre tágult a fogalomtáram és az ismereteim is, annál jobban elkezdett foglalkoztatni az új ismeretek szerzése és felhasználása. Kialakult bennem 
+az érzet, hogy fejlődni szeretnék és mindenképpen valami egyedit és hasznosat akarok alkotni a pályafutásom során a szakmámmal.
+<br> A jellemem miatt fontosnak érzem megemlíteni, hogy az iskola mellett végig, 16 éves korom óta szorgalmasan dolgozom/dolgoztam több cégnél is diákként,
+ amivel kitágult a látásom, finomodtak az elképzéseim a jövőre nézve és elsősorban beleláttam a munka világába, mellette pedig szorgalmasabbá váltam.</p>
+    </div>
+        <div class="main">
+        <header id="section2"style="text-align: center;" >Eredményeim</header>
+        <p>Már az általános iskolai kemény alapjaimnak köszönhetően több matematikai, informatikai és angol versenyen is részt vettem 
+          és jeleskedtem, pl.: Zrínyi matek-info, Bólyai matek versenyek, melyeken most, technikumban is többször megyei helyezést értem 
+          el akár egyéni akár csapatszinten is.
+  <br>Mindezt a saját magam fejlesztése és ,,kipróbálása" miatt(persze valamilyen szinten kötelezően) folytattam végig, 9-10. évfolyamban kiegészült fizika versenyekkel, 11. évfolyamban 
+  két csapattársammal elnyertük a MAVIR által rendezett országos szakmai verseny különdíját.
+  <br>Elnyertem a 10. és a 12. évfolyam tanulója címet a Gépipari diákjaként, emellett pedig a 12. évfolyamban még a TDK évfolyam tanulója címet is megszavazták számomra, amely 
+  hatalmas megtiszteltetés volt, bár én mindenkivel egyenrangúnak érzem, vagy legalábbis szeretném magamat érezni. Őszintén azonban minden egyes nap, minden új projekt, minden csapatmunka sikert jelent nekem, és bizonyítja a saját illetve a társaim kompetenciáját.</p>
+    
+    </div>
+    <div class="main">
+        <header id="section3"style="text-align: center;" >Köszönet</header>
+<p>Köszönettel tartozom minden tanáromnak, hiszen nélkülük nem lennék ott ahol, és az, aki.
+  <p style="font-weight:bold">Kiemelve:
+  </p>
+    <p style="margin-left:10%">Végh József
+    <br>Molnár Ádám
+    <br>Samu Sándor
+<br>Fodor Tímea
+    </p>
+  <span style="margin-left:2%">tanároknak, hiszen az ő munkájuk, támogatásuk, segítségük és szakértelmük jelentős</span><br><span style="margin-left:2%">löketet adott a fejlődésemben, legyen az szakmai vagy akár személyiségbeli.</span>
+</p>
+    </div>
+  <div class="main">
+      <header id="section4" style="text-align: center">Céljaim</header>
+      <ul style="margin-left:50px; font-size:20px">
+        <li>Közeli céljaim között szerepel elsősorban persze a technikusi vizsga sikeres teljesítése, 
+        az eddig tanultak önálló elmélyítése hobbi és komolyabb szinten, akár felkészülésként az egyetemre.</li>
+        <li>Bár egyelőre nem tervezek külön szakmát/irányt kitanulni, mindig is érdekelt a történelem, a pszichológia és a szociológia tudománya. </li>
+        <li>A legfőbb közeli cél jelenleg pedig a BME-re való bejutás, persze amellett a bentmaradás majd pedig a villamosmérnöki diploma megszerzése lehetőleg gyakorlati tapasztalat szerzésével egyidőben.</li>
+        <li>Villamosmérnökként valószínűleg automatizálásra-robotikára fogok szakosodni, bár nem tudhatom mit hozhat a jövő, hiszen minden ág egybefügg valamilyen szinten.</li>
+        <li>A távoli jövőben lehetőleg ezen a területen is szeretnék elhelyezkedni, ipari környezetben, hiszen már most érdekel, amit csinálok és tanulok.</li>
+        <li>Mindeközben szeretnék önállósodni és saját kezűleg valami hasznosat és maradandót alkotni.</li>
+        <li>Továbbképzésre és tanulásra mindig lesz lehetőség és szükség is, hiszen nekünk is kell fejlődni a világgal egy ütemben, ezért pedig később is szeretném képezni magam munka mellett, hogy kiélhessem a tudásvágyam.</li>
+    </ul>
+    </div>
+    <div class="main">
+         <header id="section4" style="text-align: center;">Összegzés</header>
+         <p>Egy elhivatott, céltudatos és szorgalmas diáknak/embernek gondolom magam, amit a barátaim, munkatársaim és a tanáraim is bizonyítani tudnak. A legfőbb célom pedig a tudásom bővítése, hasznosítása.
+          A jellemem és képességeim fejlesztése, testi és lelki legjobb önmagam elérése, amihez megpróbálom kiásni magam előtt az utat, vezessen az bármerre.
+         </p>
+    </div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+  <div class="footer">
+
+
+  <p>Elérhetőségek: <a class="contact" href="mailto:racsikbalint01@gmail.com">Email,</a><a class="contact" href="tel:+36305469067">                               Telefon</a></p>
+  Copyright © 2025-2026
+</div>
+</body>
+</html>

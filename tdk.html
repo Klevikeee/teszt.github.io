@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <meta charset="UTF-8">
+  <title>TDK</title>
+<head>
+<link rel="icon" type="image/x-icon" href="tdk.jpg">
+<style>html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color:white;
+  text-align:center;
+  width: 86,2%;
+  margin:0 auto;
+}
+h2, p {
+  margin: 10px;
+}
+/* navigacios baaaar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-style: solid;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(5, 121, 5);
+}
+/*a sidenavben lévö linknek a formázása*/
+.sidenav {
+  position:fixed;
+  top:60px;
+  width:15%;
+  margin-left:2%;
+}
+.sidenav a{ 
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 12px;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #2bbbb9cb 0%, #109528 100%);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.sidenav p{
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(244, 240, 240);
+    display: flex;
+    justify-content:center;
+    border-radius: 10px;
+    margin:0px;
+    background-color: rgb(30, 30, 198);
+}
+/*Ha rá mutat a linkre akkor megváltozik a link szine*/
+.sidenav a:hover{
+    color: rgb(199, 196, 202);;
+}
+
+/*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
+.main{
+    margin-left: 20%;
+    font-size: 22px;
+    font-family:'Times New Roman';
+    margin-right:10px;
+    margin-top: 2%;
+    border-style:solid;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    margin-bottom:60px;
+
+}
+/*mainben levo szoveg*/
+.main p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* legordulo  */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  border-style:solid;
+  color:white;
+  border-right:none;
+  border-top:none;
+  border-bottom:none;
+  width:120px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  margin-left:20px
+}
+/* legordulo cuccos */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/*ha ramutatsz a legordulore*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.contact:hover {
+background-color: rgb(5, 121, 5);
+}
+.contact:link{
+  color:white;
+}
+.b {
+  margin-left:50px;
+  margin-right:50px;
+  text-align:justify;
+  font-size: 20px;
+}
+li{
+  margin-bottom:10px;
+}
+/*main sectionok*/
+header{
+  margin:1%;
+  font-weight: bolder;
+   font-family:'Times New Roman';
+}
+/*munkaim oldal*/
+.munkamain{
+  display: flex;           /* Egymás mellé teszi a képet és a szöveget */
+  align-items: center;    /* Függőlegesen középre igazítja őket */
+  gap: 20px;              /* Távolság a kép és a szöveg között */
+  margin:2%;
+  font-size: 20px;
+    font-family:'Times New Roman';
+    border-style:solid;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+}</style>
+</head>
+<body style="background-color:gray;">
+<div class="navbar" id="section1">
+  <a href="Munkameveim.html">Éveim</a>
+  <a href="szakmaitap.html">Tapasztalat</a>
+  <a href="tdk.html", style="background-color: rgb(5, 121, 5)">TDK</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Rólam 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bemutatkozas.html">Bemutatkozás</a>
+    </div>
+  </div> 
+</div>
+<div><h1 style="margin-left:20%">Duális képzés</h1></div>
+<div class="sidenav">
+        <p>Könyvjelző</p>
+        <a href="#section1">Vissza</a>
+        <a href="#section2">Lehetőségek</a>
+        <a href="#section3">Tapasztalat</a>
+        <a href="#section4">Összegzés</a>
+        <iframe style="width:15vw;margin-top:5%;"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1354.7475129500483!2d16.651032669902744!3d47.2264621754042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476eb9b271694ac5%3A0xa34f8f28728fff70!2sTDK%20Hungary%20Components%20Kft.!5e0!3m2!1shu!2shu!4v1759303300029!5m2!1shu!2shu" width="20%" height="300px" style="float:right;border:0;"></iframe>
+
+    </div>
+    <div class="main">
+        <header style="text-align: center;">Kezdet</header>
+        <p>Eredetileg fogalmuam sem volt a duális képzés lehetőségéről, egyszerűen egy, az MVM által szervezett villamossági versenyről hallottam az iskolában
+         <br> Az első fordulón két társammal továbbjutottam,az országos fordulón pedig elnyertük a különdíjat, majd a tanárunk kapcsolata révén az év végén sikerült 
+          jelentkeznünk a ,,szponzorunkhoz", a TDK-hoz.
+    <br>
+    Miután megismerkedtem tanáraimmal és a céggel, az első pár hétben-hónapban neki is láttam az alapoknak újból, új környezetben, majd pedig belevágtunk a ,,komolyabb" munkába.</p>
+    </div>
+        <div class="main">
+        <header id="section2"style="text-align: center;" >Lehetőségek</header>
+        <img src="ajandekosztas.jpg" alt="Kérem,várjon" style="padding-left:20%;width:20%;height:20%">
+        <img src="tanitas.jpg"alt="Kérem,várjon" style="width: 17.8%;height:20%">
+        <img src="mikulas.jpg"alt="Kérem,várjon" style="width: 17.8%;height:20%">
+        <br>
+        <p>A TDK számos lehetőséget nyújtott, legyen az saját magam szakmai képzése, vagy akár a jövő nemzedékének segítése, 
+          hogy megtalálják, mi számít nekik igazán.<br>Szociális téren is mindenképpen jelen volt az életemben, önkéntesként is tevékenykedtem, és felvidítottam az itt dolgozók mindennapjait.
+          <br>A fenti képek mindennek az eredményét ábrázolják. A sikereim megélését és tudásom átadását.
+          <br>A megfelelően felszerelt tanműhelyben egyszerűen, és sokrétűen férhettem hozzá a tudáshoz a tanáraink révén.
+        </p>
+    
+    </div>
+    <div class="main">
+        <header id="section3"style="text-align: center;" >Tapasztalat</header>
+<p>A tanműhelyben tanult sokrétű elmélettel és gyakorlattal a harmadik év előtti nyár kezdetétől fogva részt tudtam venni a termelésben,kamatoztathattam és bővíthettem a tudásomat.<br>
+  A gyakorlati képzés segítségével kézközelből tanulhattam és cselekedhettem is, egy csapatban az ottani villamosmérnökkel, a karbantartókkal és gépbeállítókkal.
+  Nem kifejezetten csak elektronikával foglalkoztam, hanem a gyártási folyamat gördülékenységének egészében részt is vehettem, legyen szó mechanikai/folyamatbeli problémáról.
+  <br>Ezekkel még inkább bővíthettem a tudásomat, szélesebb szemszöggel láthattam rá a dolgokra és máshogy tudtam gondolkozni a több ág ismeretével.
+  <p style="text-align: center;">Az alábbiakban 2 termelésbeli gép szekrényébe kapnak belátást:<br> a baloldalon több motorvezérlő kötését végeztem, a jobb oldalon pedig biztosítékcserét végeztem, felügyelettel</p>
+  <p style="opacity:0.6;text-align: center ;">(a képek engedéllyel készültek)</p>
+  <img src="motorkabel.jpg"alt="Kérem,várjon" style="width:20%;height:20%;float:center;margin-left:28%">
+  <img src="kotes.jpg"alt="Kérem,várjon" style="width:20%;height:20%;float:center;margin-left:2%">
+  <p>Lehetőséget kaptam többször is nyíltnapok levezetésére, előadásokon lévő megjelenésre és közvetlen ügyintézésre, amelyek pedig szintén a szociális kézségeimet segítették.</p>
+</p5>
+    </div>
+    <div class="main">
+         <header id="section4" style="text-align: center;">Összegzés</header>
+         <p>Megszámlálhatatlan élményt, ismerőst, lehetőséget és számos készséget nyújtott számomra a TDK, amiért nagyon hálás vagyok, és mindenképpen egy fontos lépcső az életem során.</p>
+    </div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+
+<div class="footer">
+  <p>Elérhetőségek: <a class="contact" href="mailto:racsikbalint01@gmail.com">Email,</a><a class="contact" href="tel:+36305469067">                               Telefon</a></p>
+  Copyright © 2025-2026
+</div>
+</body>
+</html>
